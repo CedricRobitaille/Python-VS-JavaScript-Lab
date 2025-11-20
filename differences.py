@@ -74,10 +74,24 @@
 
 
 ## Search Array / List
-def searchArr(arr, val):
-  for index in arr:
-    if index == val:
-      return True
-  return False
+# def searchArr(arr, val):
+#   for index in arr:
+#     if index == val:
+#       return True
+#   return False
 
-print(searchArr([1,2,3], 3))
+# print(searchArr([1,2,3], 3))
+
+
+
+## Palindrome
+# def isPalindrome(string):
+#   for index in range(int(len(string) / 2)):
+#     if string[index] != string[len(string)-index-1]:
+#       return False
+#   return True
+# print(isPalindrome("Thanks!"))
+# print(isPalindrome("racecar"))
+
+
+
