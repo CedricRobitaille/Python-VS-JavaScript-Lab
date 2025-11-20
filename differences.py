@@ -58,18 +58,26 @@
 
 
 ## Nth Fibonacci
-def nthFibonacciNumber():
-  fibs = [1, 1]
-  num = int(input("Which fibonacci number do you want? "))
-  print("this")
-  if not isinstance(num, int):
-    print("Sorry, " + num + " was not a number.")
+# def nthFibonacciNumber():
+#   fibs = [1, 1]
+#   num = int(input("Which fibonacci number do you want? "))
 
-  while len(fibs) < int(num):
-    length = len(fibs)
-    nextFib = fibs[length - 2] + fibs[length -1]
-    fibs.append(nextFib)
+#   while len(fibs) < int(num):
+#     length = len(fibs)
+#     nextFib = fibs[length - 2] + fibs[length -1]
+#     fibs.append(nextFib)
 
-  print(str(fibs[len(fibs) - 1]) + " is the fibonacci number at position " + str(num))
+#   print(str(fibs[len(fibs) - 1]) + " is the fibonacci number at position " + str(num))
 
-nthFibonacciNumber()
+# nthFibonacciNumber()
+
+
+
+## Search Array / List
+def searchArr(arr, val):
+  for index in arr:
+    if index == val:
+      return True
+  return False
+
+print(searchArr([1,2,3], 3))
