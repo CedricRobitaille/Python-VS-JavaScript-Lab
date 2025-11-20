@@ -95,3 +95,21 @@
 
 
 
+## Duplicate Checker
+def hasDupes(arr):
+  obj = {}
+  for item in range(len(arr)):
+    if item in obj:
+      return True
+    obj[item] = True
+  return False
+
+print(hasDupes([1,2,3]))
+
+
+
+
+
+
+
+
